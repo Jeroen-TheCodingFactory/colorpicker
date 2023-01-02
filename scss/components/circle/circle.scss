@@ -1,0 +1,15 @@
+.circle {
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    height: 70%;
+}
+
+@keyframes popupCircle {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

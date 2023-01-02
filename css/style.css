@@ -1,0 +1,496 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 4rem;
+  background: linear-gradient(to bottom right, #5800FF, #FAEA48);
+  font-family: "Open Sans", sans-serif;
+  min-height: 100vh;
+}
+
+main {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  background: #eee;
+  padding: 4rem;
+  border-radius: 0.5rem;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.card {
+  aspect-ratio: 1/1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  animation-name: popup;
+  animation-duration: 0.8s;
+  animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  animation-fill-mode: backwards;
+  box-shadow: 0 0rem 0.5rem 0 rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  background: #eee;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.card p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: popupCircle;
+  animation-duration: 0.8s;
+  animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  animation-fill-mode: backwards;
+  font-size: 90%;
+  font-weight: 300;
+}
+
+.card--done--start .circle {
+  transform: scale(5);
+  transition: 0.8s all;
+}
+
+.card[data-test="1"] {
+  animation-delay: 0.05s;
+}
+
+.card[data-test="2"] {
+  animation-delay: 0.1s;
+}
+
+.card[data-test="3"] {
+  animation-delay: 0.15s;
+}
+
+.card[data-test="4"] {
+  animation-delay: 0.2s;
+}
+
+.card[data-test="5"] {
+  animation-delay: 0.25s;
+}
+
+.card[data-test="6"] {
+  animation-delay: 0.3s;
+}
+
+.card[data-test="7"] {
+  animation-delay: 0.35s;
+}
+
+.card[data-test="8"] {
+  animation-delay: 0.4s;
+}
+
+.card[data-test="9"] {
+  animation-delay: 0.45s;
+}
+
+.card[data-test="10"] {
+  animation-delay: 0.5s;
+}
+
+.card[data-test="11"] {
+  animation-delay: 0.55s;
+}
+
+.card[data-test="12"] {
+  animation-delay: 0.6s;
+}
+
+.card[data-test="13"] {
+  animation-delay: 0.65s;
+}
+
+.card[data-test="14"] {
+  animation-delay: 0.7s;
+}
+
+.card[data-test="15"] {
+  animation-delay: 0.75s;
+}
+
+.card[data-test="16"] {
+  animation-delay: 0.8s;
+}
+
+.card[data-test="17"] {
+  animation-delay: 0.85s;
+}
+
+.card[data-test="18"] {
+  animation-delay: 0.9s;
+}
+
+.card[data-test="19"] {
+  animation-delay: 0.95s;
+}
+
+.card[data-test="20"] {
+  animation-delay: 1s;
+}
+
+.card[data-test="21"] {
+  animation-delay: 1.05s;
+}
+
+.card[data-test="22"] {
+  animation-delay: 1.1s;
+}
+
+.card[data-test="23"] {
+  animation-delay: 1.15s;
+}
+
+.card[data-test="24"] {
+  animation-delay: 1.2s;
+}
+
+.card[data-test="25"] {
+  animation-delay: 1.25s;
+}
+
+.card[data-test="26"] {
+  animation-delay: 1.3s;
+}
+
+.card[data-test="27"] {
+  animation-delay: 1.35s;
+}
+
+.card[data-test="28"] {
+  animation-delay: 1.4s;
+}
+
+.card[data-test="29"] {
+  animation-delay: 1.45s;
+}
+
+.card[data-test="30"] {
+  animation-delay: 1.5s;
+}
+
+.card[data-test="31"] {
+  animation-delay: 1.55s;
+}
+
+.card[data-test="32"] {
+  animation-delay: 1.6s;
+}
+
+.card[data-test="33"] {
+  animation-delay: 1.65s;
+}
+
+.card[data-test="34"] {
+  animation-delay: 1.7s;
+}
+
+.card[data-test="35"] {
+  animation-delay: 1.75s;
+}
+
+.card[data-test="36"] {
+  animation-delay: 1.8s;
+}
+
+.card[data-test="37"] {
+  animation-delay: 1.85s;
+}
+
+.card[data-test="38"] {
+  animation-delay: 1.9s;
+}
+
+.card[data-test="39"] {
+  animation-delay: 1.95s;
+}
+
+.card[data-test="40"] {
+  animation-delay: 2s;
+}
+
+.card[data-test="41"] {
+  animation-delay: 2.05s;
+}
+
+.card[data-test="42"] {
+  animation-delay: 2.1s;
+}
+
+.card[data-test="43"] {
+  animation-delay: 2.15s;
+}
+
+.card[data-test="44"] {
+  animation-delay: 2.2s;
+}
+
+.card[data-test="45"] {
+  animation-delay: 2.25s;
+}
+
+.card[data-test="46"] {
+  animation-delay: 2.3s;
+}
+
+.card[data-test="47"] {
+  animation-delay: 2.35s;
+}
+
+.card[data-test="48"] {
+  animation-delay: 2.4s;
+}
+
+.card[data-test="49"] {
+  animation-delay: 2.45s;
+}
+
+.card[data-test="50"] {
+  animation-delay: 2.5s;
+}
+
+.card[data-test="51"] {
+  animation-delay: 2.55s;
+}
+
+.card[data-test="52"] {
+  animation-delay: 2.6s;
+}
+
+.card[data-test="53"] {
+  animation-delay: 2.65s;
+}
+
+.card[data-test="54"] {
+  animation-delay: 2.7s;
+}
+
+.card[data-test="55"] {
+  animation-delay: 2.75s;
+}
+
+.card[data-test="56"] {
+  animation-delay: 2.8s;
+}
+
+.card[data-test="57"] {
+  animation-delay: 2.85s;
+}
+
+.card[data-test="58"] {
+  animation-delay: 2.9s;
+}
+
+.card[data-test="59"] {
+  animation-delay: 2.95s;
+}
+
+.card[data-test="60"] {
+  animation-delay: 3s;
+}
+
+.card[data-test="61"] {
+  animation-delay: 3.05s;
+}
+
+.card[data-test="62"] {
+  animation-delay: 3.1s;
+}
+
+.card[data-test="63"] {
+  animation-delay: 3.15s;
+}
+
+.card[data-test="64"] {
+  animation-delay: 3.2s;
+}
+
+.card[data-test="65"] {
+  animation-delay: 3.25s;
+}
+
+.card[data-test="66"] {
+  animation-delay: 3.3s;
+}
+
+.card[data-test="67"] {
+  animation-delay: 3.35s;
+}
+
+.card[data-test="68"] {
+  animation-delay: 3.4s;
+}
+
+.card[data-test="69"] {
+  animation-delay: 3.45s;
+}
+
+.card[data-test="70"] {
+  animation-delay: 3.5s;
+}
+
+.card[data-test="71"] {
+  animation-delay: 3.55s;
+}
+
+.card[data-test="72"] {
+  animation-delay: 3.6s;
+}
+
+.card[data-test="73"] {
+  animation-delay: 3.65s;
+}
+
+.card[data-test="74"] {
+  animation-delay: 3.7s;
+}
+
+.card[data-test="75"] {
+  animation-delay: 3.75s;
+}
+
+.card[data-test="76"] {
+  animation-delay: 3.8s;
+}
+
+.card[data-test="77"] {
+  animation-delay: 3.85s;
+}
+
+.card[data-test="78"] {
+  animation-delay: 3.9s;
+}
+
+.card[data-test="79"] {
+  animation-delay: 3.95s;
+}
+
+.card[data-test="80"] {
+  animation-delay: 4s;
+}
+
+.card[data-test="81"] {
+  animation-delay: 4.05s;
+}
+
+.card[data-test="82"] {
+  animation-delay: 4.1s;
+}
+
+.card[data-test="83"] {
+  animation-delay: 4.15s;
+}
+
+.card[data-test="84"] {
+  animation-delay: 4.2s;
+}
+
+.card[data-test="85"] {
+  animation-delay: 4.25s;
+}
+
+.card[data-test="86"] {
+  animation-delay: 4.3s;
+}
+
+.card[data-test="87"] {
+  animation-delay: 4.35s;
+}
+
+.card[data-test="88"] {
+  animation-delay: 4.4s;
+}
+
+.card[data-test="89"] {
+  animation-delay: 4.45s;
+}
+
+.card[data-test="90"] {
+  animation-delay: 4.5s;
+}
+
+.card[data-test="91"] {
+  animation-delay: 4.55s;
+}
+
+.card[data-test="92"] {
+  animation-delay: 4.6s;
+}
+
+.card[data-test="93"] {
+  animation-delay: 4.65s;
+}
+
+.card[data-test="94"] {
+  animation-delay: 4.7s;
+}
+
+.card[data-test="95"] {
+  animation-delay: 4.75s;
+}
+
+.card[data-test="96"] {
+  animation-delay: 4.8s;
+}
+
+.card[data-test="97"] {
+  animation-delay: 4.85s;
+}
+
+.card[data-test="98"] {
+  animation-delay: 4.9s;
+}
+
+.card[data-test="99"] {
+  animation-delay: 4.95s;
+}
+
+.card[data-test="100"] {
+  animation-delay: 5s;
+}
+
+@keyframes popup {
+  from {
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+.circle {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  height: 70%;
+}
+
+@keyframes popupCircle {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

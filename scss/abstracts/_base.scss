@@ -1,0 +1,20 @@
+@use "../mixins/mixins";
+
+body {
+    padding: 4rem;
+    background: linear-gradient(to bottom right, #5800FF,#FAEA48);
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+}
+
+main {
+    font-size: 2rem;
+    @include mixins.flexCenter(center, center, wrap, column, 2rem);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    background:#eee;    
+    padding:4rem;
+    border-radius: 0.5rem;
+    max-width: 120rem;
+    margin: 0 auto;
+}

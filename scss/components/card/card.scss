@@ -1,0 +1,54 @@
+.card {
+    aspect-ratio: 1/1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    animation-name: popup;
+    animation-duration: 0.8s;
+    animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    animation-fill-mode: backwards;
+    box-shadow: 0 0rem 0.5rem 0 rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    background: #eee;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.card p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: popupCircle;
+    animation-duration: 0.8s;
+    animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    animation-fill-mode: backwards;
+    font-size: 90%;
+    font-weight: 300;
+}
+
+.card--done--start .circle {
+    transform: scale(5);
+    transition: 0.8s all;
+}
+
+
+@for $i from 1 through 100 {
+    .card[data-test="#{$i}"] {
+        animation-delay: $i / 20 + s;
+    }
+}
+
+@keyframes popup {
+    from {
+        transform: translateY(2rem);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+}

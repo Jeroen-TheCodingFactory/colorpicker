@@ -87,6 +87,11 @@ class Circle implements CircleI {
 
 /* Main loop */
 for (let i = 1; i <= 50; i++) {
-    let element = new Card(i, `hsl(${i},100%,50%)`);
+    let randomHue = Math.floor(Math.random() * (360 - 1 + 1)) + 1;
+    let randomSaturation = Math.floor(Math.random() * (70 - 20 + 1)) + 20 + "%";
+    let randomLightness = Math.floor(Math.random() * (80 - 20 + 1)) + 20 + "%";
+    console.log(randomSaturation);
+    // Math.floor(Math.random() * (max - min + 1)) + min;
+    let element = new Card(i, `hsl(${randomHue},${randomSaturation},${randomLightness})`);
     element.render(document.getElementById("js--main")! as HTMLElement);
 }

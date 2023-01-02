@@ -59,6 +59,11 @@ var Circle = /** @class */ (function () {
 }());
 /* Main loop */
 for (var i = 1; i <= 50; i++) {
-    var element = new Card(i, "hsl(".concat(i, ",100%,50%)"));
+    var randomHue = Math.floor(Math.random() * (360 - 1 + 1)) + 1;
+    var randomSaturation = Math.floor(Math.random() * (70 - 20 + 1)) + 20 + "%";
+    var randomLightness = Math.floor(Math.random() * (80 - 20 + 1)) + 20 + "%";
+    console.log(randomSaturation);
+    // Math.floor(Math.random() * (max - min + 1)) + min;
+    var element = new Card(i, "hsl(".concat(randomHue, ",").concat(randomSaturation, ",").concat(randomLightness, ")"));
     element.render(document.getElementById("js--main"));
 }

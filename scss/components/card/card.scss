@@ -37,7 +37,7 @@
 
 @for $i from 1 through 100 {
     .card[data-test="#{$i}"] {
-        animation-delay: $i / 20 + s;
+        animation-delay: calc($i / 20) + s;
     }
 }
 

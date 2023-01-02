@@ -32,6 +32,15 @@ main {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 62.5rem) {
+  body {
+    padding: 1rem;
+  }
+  main {
+    padding: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+}
 .card {
   aspect-ratio: 1/1;
   width: 100%;
